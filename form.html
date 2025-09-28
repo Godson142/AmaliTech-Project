@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Forms With HTML</title>
+  </head>
+  <body>
+    <form action="#" method="post ">
+      <fieldset>
+        <legend>Login*</legend>
+        <label for="login">Username* <br>
+            <input name="login" id="login" type="text" required>
+        </label>
+
+        <br>
+        <label for="password">Password* <br>
+            <input name="login" type="password" id="password" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend> Gender*</legend>
+            <label for="male">
+                <input id="male" name="gender" type="radio"> Male
+            </label>
+
+            <label for="female">
+                <input id="female" name="gender" type="radio"> Female   
+            </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Programming Skill</legend>
+        <label for="java">
+            <input id="java" type="checkbox"> Java
+        </label>
+
+        <label for="c++">
+            <input id="c++" type="checkbox" checked> C++
+        </label>
+
+        <label for="c#">
+            <input id="c#" type="checkbox"> C#
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fruit</legend>
+        <label> Choose a fruit:</label>
+        <select>
+            <option value="ban">Banana</option>
+            <option value="ora">Orange</option>
+            <option value="gra">Grapes</option>
+            <option value="blue">Blueberry</option>
+            <option value="al">Almond</option>
+            <option value="man">Mango</option>
+        </select>
+      </fieldset>
+
+        <textarea rows="10" cols="75" placeholder="Enter your comment here"></textarea>
+        <br>
+        
+        <input type="submit" value="SEND">
+        <input type="reset" value="RESET">
+      
+    </form>
+  </body>
+</html>
