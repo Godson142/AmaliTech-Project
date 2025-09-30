@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creating A Table Using HTML</title>
     <style>
-        @media {
-            table {
-                font-size: 12px;
-            }
-        }
-        body {
-            text-align: center;
-            width: 100%;
-        }
-        .head {
-            background-color: rgb(207, 255, 134);
-        }
-
-        tr {
-            background-color: rgb(253, 241, 225);
-        }
-
-        th, td {
-            padding: 8px;
-            border: 1px solid #000;
-        }
-
-        .head td{
-            padding: 10px;
-        }
-
+      @media (max-width: 600px) {
         table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            text-align: center;
-            min-width: 700px;
+          font-size: 12px;
         }
+      }
+
+      body {
+        text-align: center;
+        width: 100%;
+      }
+      .head {
+        background-color: rgb(207, 255, 134);
+      }
+
+      tr {
+        background-color: rgb(253, 241, 225);
+      }
+
+      th,
+      td {
+        padding: 8px;
+        border: 1px solid #000;
+      }
+
+      td:first-child {
+        white-space: nowrap;
+      }
+
+      .head td {
+        padding: 10px;
+      }
+
+      table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        text-align: center;
+        min-width: 700px;
+      }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Semester Timetable (Monday -- Thursday)</h2>
-    <table>
+    
+      <table>
         <tr class="head">
-            <th>Time</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
         </tr>
 
         <tr>
-            <td>08:00 - 09:00</td>
-            <td>HTML & CSS (Lecture)</td>
-            <td>JavaScript (Lecture)</td>
-            <td>Database Systems (Lecture)</td>
-            <td>Professional Skills</td>
+          <td>08:00 - 09:00</td>
+          <td>HTML & CSS (Lecture)</td>
+          <td>JavaScript (Lecture)</td>
+          <td>Database Systems (Lecture)</td>
+          <td>Professional Skills</td>
         </tr>
 
         <tr>
-            <td>09:00 - 10:00</td>
-            <td>HTML Lab (Practical)</td>
-            <td>JS Lab (Practical)</td>
-            <td>Database Lab</td>
-            <td>Group Project Time</td>
+          <td>09:00 - 10:00</td>
+          <td>HTML Lab (Practical)</td>
+          <td>JS Lab (Practical)</td>
+          <td>Database Lab</td>
+          <td>Group Project Time</td>
         </tr>
         <tr>
-            <td>10:00 - 10:20</td>
-            <td>Break</td>
-            <td>Break</td>
-            <td>Break</td>
-            <td>Break</td>
+          <td>10:00 - 10:20</td>
+          <td>Break</td>
+          <td>Break</td>
+          <td>Break</td>
+          <td>Break</td>
         </tr>
         <tr>
-            <td>10:30 - 11:30</td>
-            <td>Web Design (Lecture)</td>
-            <td>Algorithms (Lecture)</td>
-            <td>Web Design Lab</td>
-            <td>Seminar / Guest Talk</td>
+          <td>10:30 - 11:30</td>
+          <td>Web Design (Lecture)</td>
+          <td>Algorithms (Lecture)</td>
+          <td>Web Design Lab</td>
+          <td>Seminar / Guest Talk</td>
         </tr>
         <tr>
-            <td>11:30 - 12:30</td>
-            <td>Portfolio Workshop</td>
-            <td>Problem Solving</td>
-            <td>Revision Session</td>
-            <td>Portfolio Review</td>
+          <td>11:30 - 12:30</td>
+          <td>Portfolio Workshop</td>
+          <td>Problem Solving</td>
+          <td>Revision Session</td>
+          <td>Portfolio Review</td>
         </tr>
         <tr>
-            <td>12:30 - 13:30</td>
-            <td>Lunch Break</td>
-            <td>Lunch Break</td>
-            <td>Lunch Break</td>
-            <td>Lunch Break</td>
+          <td>12:30 - 13:30</td>
+          <td>Lunch Break</td>
+          <td>Lunch Break</td>
+          <td>Lunch Break</td>
+          <td>Lunch Break</td>
         </tr>
         <tr>
-            <td>13:30 - 14:30</td>
-            <td>Elective / Self-study</td>
-            <td>Team Coding</td>
-            <td>Elective /Self-study</td>
-            <td>Team Coding</td>
+          <td>13:30 - 14:30</td>
+          <td>Elective / Self-study</td>
+          <td>Team Coding</td>
+          <td>Elective /Self-study</td>
+          <td>Team Coding</td>
         </tr>
 
         <tr>
-            <td>14:30 - 15:30</td>
-            <td>Project Clinic</td>
-            <td>Project Clinic</td>
-            <td>Guest Lecture</td>
-            <td>Wrap-up & Q&A</td>
+          <td>14:30 - 15:30</td>
+          <td>Project Clinic</td>
+          <td>Project Clinic</td>
+          <td>Guest Lecture</td>
+          <td>Wrap-up & Q&A</td>
         </tr>
-    </table>
-</body>
+      </table>
+    
+  </body>
 </html>
